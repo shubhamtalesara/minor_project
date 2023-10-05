@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Screener</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="output.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar" >
+    <a href="homepage.html">Home</a>
+    <a href="#">Search</a>
+    <a href="#">Analysis</a>
+    <a href="#">About</a>
+</nav>
+
+<main class="main-content">
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for stocks...">
+        <div id="search-results"></div>
+    </div>
+
+
+    <h1 class="section-title">Trending stocks</h1>
+    <table class="stock-table">
+        <thead>
+            <tr>
+                <th >Ticker</th>
+                <th>Company Name</th>
+                <th>Price</th>
+                <th>Change</th>
+            </tr>
+        </thead>
+        <tbody id="stock-table-body">
+            <!-- Trending stocks data will be dynamically populated here -->
+        </tbody>
+    </table>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2023 Stock Screener. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="stockdetails.js"></script>
+</body>
+</html>

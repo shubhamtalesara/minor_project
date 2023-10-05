@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis</title>
+    <link rel="stylesheet" type="text/css" href="stockdetail.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar" >
+        <a href="homepage.html">Home</a>
+        <a href="#">Search</a>
+        <a href="#">Analysis</a>
+        <a href="#">About</a>
+    </nav>
+   <centre> <h1 id="stockDetailsTitle">Stock details for: </h1>
+   </centre>
+<section id="ratios" class="card card-large">
+    <h2 class="section-title">Ratios</h2>
+    <div class="flex flex-column-mobile flex-gap-32">
+        <!-- Content for Ratios section -->
+    </div>
+</section>
+
+<br></br>
+
+<section id="stock-price-graph" class="card card-large">
+    <h2 class="section-title">Stock Price Graph</h2>
+        <canvas id="stockChart"></canvas>
+</section>
+<br></br>
+
+<section id="balance-sheet" class="card card-large">
+    <h2 class="section-title">Income Statement</h2>
+    <div class="flex flex-column-mobile flex-gap-32">
+        <table id="balanceSheetTable">
+            <thead>
+                <tr>
+                    <th>Line Item</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table content will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+</section>
+<br></br>
+
+<section id="cash-flow-statement" class="card card-large">
+    <h2 class="section-title">Cash Flow Statement</h2>
+    <div class="flex flex-column-mobile flex-gap-32">
+        <table id="cashFlowStatementTable">
+            <thead>
+                <tr>
+                    <th>Line Item</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table content will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+</section>
+<br></br>
+
+<section id="income-statement" class="card card-large">
+    <h2 class="section-title">Balance sheet</h2>
+    <div class="flex flex-column-mobile flex-gap-32">
+        <table id="incomeStatementTable">
+            <thead>
+                <tr>
+                    <th>Line Item</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table content will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+</section>
+<br></br>
+
+<footer class="footer">
+    <p>&copy; 2023 Stock Analysis. All rights reserved.</p>
+</footer>
+
+<script src="stockdetails.js"></script>
+</body>
+</html>
